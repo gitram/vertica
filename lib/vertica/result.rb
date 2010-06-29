@@ -19,7 +19,7 @@ module Vertica
         index = 0
         fv.map do |f|
           index += 1
-          self.columns[index-1].convert(f[:value])
+          self.columns[index-1].convert(f[:value]) rescue nil
         end
       end
     end

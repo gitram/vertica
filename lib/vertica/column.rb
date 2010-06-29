@@ -1,3 +1,5 @@
+require 'date'
+
 module Vertica
   class Column
     attr_reader :name
